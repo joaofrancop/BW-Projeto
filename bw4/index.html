@@ -1,0 +1,102 @@
+<!-- Nome: João Guilherme Franco Pinheiro
+RGM: 37079051 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Woman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <script src="./login.js" defer></script>
+</head>
+<body id="inicio">
+    <header>
+        <nav>
+            <a href="#inicio">Home</a>
+            <a href="#lancamentos">Lançamentos</a>
+            <a href="#maisVendidas">Mais Vendidas</a>
+            <a href="#comentarios">Comentários</a>
+            <a href="#loginModal" id="btnLogin">Admin</a>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo">
+            <h1>Business Woman</h1>
+        </section>
+        
+        <section id="lancamentos">
+            <h1>Lançamentos</h1>
+            <div class="image-container">
+                <img src="FotosRoupas/roupa1.jpg" alt="Descrição da Imagem 1" loading="lazy">
+                <img src="FotosRoupas/roupa3.jpg" alt="Descrição da Imagem 3" loading="lazy">
+                <img src="FotosRoupas/roupa2.jpg" alt="Descrição da Imagem 2" loading="lazy">
+            </div>
+            <section id="descricaoColecao">
+                <h2>Coleção "Elegância Profissional"</h2>
+                <p>
+                    Apresentamos com orgulho a nossa nova coleção de roupas femininas, "Elegância Profissional", criada para inspirar confiança e estilo no ambiente de trabalho. Esta coleção combina beleza e funcionalidade, proporcionando peças que fazem você se sentir poderosa e sofisticada enquanto desempenha suas funções.
+                </p>
+            </section>
+            
+        </section>
+        
+
+        <section id="maisVendidas">
+            <h1>Mais Vendidas</h1>            
+            
+            <!-- Carrossel de Imagens na Seção Orçamento -->
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="FotosRoupas/roupa9.jpg" alt="Imagem 1" class="carousel-img">
+                    <img src="FotosRoupas/roupa5.jpg" alt="Imagem 2" class="carousel-img">
+                    <img src="FotosRoupas/roupa6.jpg" alt="Imagem 3" class="carousel-img">
+                    <img src="FotosRoupas/roupa7.jpg" alt="Imagem 4" class="carousel-img">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <section id="descricaoColecao">
+            <h2>Elegância Profissional</h2>
+            <p>
+                Cada peça da coleção foi desenhada pensando na mulher moderna, que busca looks que refletem sua personalidade e a seriedade do ambiente profissional. Combinamos cortes elegantes e silhuetas contemporâneas, garantindo que você esteja sempre adequada e estilosa. Nossos vestidos, blusas e saias são feitos com tecidos que oferecem conforto ao longo do dia, permitindo liberdade de movimento e praticidade.
+            </p>
+        </section>
+        
+        <section id="comentarios">
+            <h1>Cadastre-se na nossa newsletter para receber novidades exclusivas!</h1>
+            <form id="comentarios">
+                <label for="comentariosNome">Nome:</label>
+                <input type="text" id="comentariosNome" required>
+                <br>
+                <label for="comentariosEmail">E-mail:</label>
+                <input type="email" id="comentariosEmail" required>
+                <button type="button">Cadastrar</button>
+            </form>
+            <ul id="contato">
+                <li><strong>Instagram: @bwexemplo</strong>
+                <li><strong>E-mail: businesswoman@exemplo.com</
+                </li>
+                <li><strong>Telefone: (00) 1234-5678</strong></li>
+            </ul> 
+        </section>
+
+    </main>
+    <dialog id="loginModal">
+        <form>
+            <h2>Login</h2>
+            <label for="email"> E-mail:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="senha"> Senha: </label>
+            <input type="password" name="senha" id="senha"><br>
+            <button type="button" id="btnFechar">Sair</button>
+            <button type="submit" id="btnEntrar">Entrar</button>
+        </form>
+    </dialog>
+    <footer>
+        <p>Todos os direitos reservados | Business Woman Ltda | CNPJ 12.345.678/0001-23 | PR - BRASIL</p>
+        <p>&copy;2024 - Business Woman</p>
+    </footer>
+</body>
+</html>
